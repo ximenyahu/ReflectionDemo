@@ -21,7 +21,7 @@ public class ReflectionTest {
         /**
          * 1.获取class对象的几种方式
          * Target.class 最为安全可靠，性能最高
-         * 2.已知该类的实例，调用该类的getClass()方法获取Class实例
+         * 2.已知该类的实例，调用该类的getClass()方法获取Class实例(getClass为Object中的方法)
          * TargetClass targetClass = new TargetClass("Simon", 20);
          * Class tc = targetClass.getClass();
          * 3已知一个类的全类名，且该类在类路径下，可通过Class的类的静态方法forName()获取
